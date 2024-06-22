@@ -1,0 +1,30 @@
+  // Assuming admin credentials
+    const adminEmail = 'admin@example.com';
+    const adminPassword = 'adminPassword';
+
+
+   http://localhost:5173/admin-login
+   http://localhost:5173/admin 
+
+
+   userid:
+   XDUNZaJE01Tn8gITKNlaMYwBG803
+
+
+   firebase:
+   {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null",
+    "counters": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "contacts": {
+      ".indexOn": ["name", "phone", "email", "message"]
+    },
+    "users": {
+      ".indexOn": ["name", "email", "phone"]
+    }
+  }
+}
